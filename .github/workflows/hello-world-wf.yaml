@@ -2,7 +2,7 @@ name: first-workflow
 on: [push]
 jobs:
   shell-cmd-job:
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: echo Hello
         run: echo "Hello World"
@@ -10,3 +10,8 @@ jobs:
         run: |
           node -v
           npm -v
+  parallel-job:
+    runs-on: macos-latest
+    steps:
+     - name: show software version
+     run: sw_vers        
