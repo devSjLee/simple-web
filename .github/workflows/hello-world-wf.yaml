@@ -13,5 +13,5 @@ jobs:
   parallel-job:
     runs-on: macos-latest
     steps:
-     - name: show software version
-     run: sw_vers        
+      - name: show software version
+        run: sw_vers       
